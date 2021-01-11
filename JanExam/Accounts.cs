@@ -35,7 +35,7 @@ namespace JanExam
         //Implementation of abstract method
         public override double CalculateInterest()
         {
-            return Balance * 0.03;
+            return Balance * 0.03;                              //calculating the intrest rate
         }
     }
 
@@ -48,7 +48,7 @@ namespace JanExam
         //Implementation of abstract method
         public override double CalculateInterest()
         {
-            return Balance * 0.06;
+            return Balance * 0.06;                              //calculating the intrest rate
         }
     }
 }
