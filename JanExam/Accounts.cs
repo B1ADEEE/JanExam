@@ -22,7 +22,7 @@ namespace JanExam
         public abstract double CalculateInterest();
         public override string ToString()
         {
-            return $"{LastName.ToUpper()}, {FirstName}";
+            return $"{LastName}, {FirstName}";                  //Formating
         }
 
     }
@@ -32,7 +32,7 @@ namespace JanExam
         {
 
         }
-        //Implementation of abstract method
+                                                                //Implementation of abstract method
         public override double CalculateInterest()
         {
             return Balance * 0.03;                              //calculating the intrest rate
@@ -45,7 +45,7 @@ namespace JanExam
         {
             
         }
-        //Implementation of abstract method
+                                                                //Implementation of abstract method
         public override double CalculateInterest()
         {
             return Balance * 0.06;                              //calculating the intrest rate
