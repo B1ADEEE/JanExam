@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace JanExam
 {
-    public abstract class Accounts : IComparable
+    public abstract class Accounts
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
