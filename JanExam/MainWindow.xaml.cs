@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+ * 
+ *      -- Link to Github: https://github.com/B1ADEEE/JanExam
+ * 
+ * 
+ */
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -47,17 +53,25 @@ namespace JanExam
             Savingaccountppl.Add(e3v2);
             accounts.Add(e4);
             Currentaccountppl.Add(e4v2);
-            ListboxAccount.ItemsSource = accounts;                                                                      //filling the empty table with just emplyee at first
+            ListboxAccount.ItemsSource = accounts;                                                                      //filling the empty table with just accounts at first
         }
 
         private void SavingCHECK_Checked(object sender, RoutedEventArgs e)
         {
             AccountTypeTBX.Text = "Savings Account";
+            if (SavingCHECK.IsChecked == true)                                                                            //if the fulltime check box is checked list only saving accounts
+            {
+                ListboxAccount.ItemsSource = Savingaccountppl;
+            }
         }
 
         private void CurrentCHECK_Checked(object sender, RoutedEventArgs e)
         {
             AccountTypeTBX.Text = "Current Account";
+            if (CurrentCHECK.IsChecked == true)                                                                            //if the fulltime check box is checked list only current accounts
+            {
+                ListboxAccount.ItemsSource = Currentaccountppl;
+            }
         }
 
         private void ListboxAccount_SelectionChanged(object sender, SelectionChangedEventArgs e)
